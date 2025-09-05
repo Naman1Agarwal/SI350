@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Registration for Tennis Event</title>
+  <meta name="description" content="Register for ongoing tennis events">
+  <meta name="author" content="Naman Agarwal">
+</head>
+
+<body>
+
+  <h1> Play with me or someone else! </h1>
+  
+  <form method="post" action="./submit.php">
+    
+    <br> Name: <input type="text" name="Player_Name" size="25" maxlength="15" placeholder="name">
+    <br> Email: <input type="email" name="Player_Email" required>
+    <br> Who do you want to play with? <input type="text" name="Opponent" size="25" maxlength="15" placeholder="default is me">
+    
+    <br> Do you want to play a match? Yes: <input type="radio" name="for_match" value="one" checked>
+   No: <input type="radio" name="for_match" value="two">
+   
+   <br> Experience Level:     
+    <label> <input type="checkbox" name="experience" value="Beginner"> Beginner </label>
+    <label> <input type="checkbox" name="experience" value="Intermediate"> Intermediate </label>
+    <label> <input type="checkbox" name="experience" value="Advanced"> Advanced </label> 
+    
+    <br> Password: <input type="password" name="Player_Password" value="">
+    
+    
+    <br> <input type="submit" value="Submit!">
+    <br> <input type="reset" value="Clear Data">  
+  </form>
+  <p> <a href="https://midn.cs.usna.edu/~m270036/SI350/Lab02/index.html"> Go back! </a> </p>
+  
+</body>
+</html>
+

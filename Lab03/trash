@@ -1,0 +1,34 @@
+  /*  if (isset($
+
+    # check name
+    # check email
+    # check do you want to play a match
+    # check experience level
+
+# friendly confirmation
+
+    # display name and email
+    # who their playing with
+    # experience level and if match
+    # password with **/
+    
+    
+    <?php
+    $player_name = $_POST['Player_Name'] ?? '';
+    $player_email = $_POST['Player_Email'] ?? '';
+    $player_opponent $_POST['Opponent'] ?? '';
+    $playing_match = $_POST['for_match'] ?? '';
+    $exp_level = $_POST['experience'] ?? '';
+    
+    echo htmlspecialchars($player_opponent);
+    exit;
+?>
+
+         <?php 
+         if ($playing_match == 'one') { 
+         ?>
+           <p> <center> You are playing a match </center> </p>
+         <?php } else {?>
+           <p> <center> You are not playing a match </center> </p>
+         <?php> } ?>
+         
