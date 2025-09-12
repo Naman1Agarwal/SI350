@@ -15,9 +15,9 @@
   
   <form method="post" action="./submit.php">
     
-    <br> Name: <input type="text" size="25" maxlength="15" value="Name">
-    <br> Email: <input type="email" name="Player Email" required>
-    <br> Who do you want to play with? <input type="text" size="25" maxlength="15" value="Default is me">
+    <br> Name: <input type="text" name="Player_Name" size="25" maxlength="15" placeholder="name">
+    <br> Email: <input type="email" name="Player_Email" required>
+    <br> Who do you want to play with? <input type="text" name="Opponent" size="25" maxlength="15" placeholder="default is me">
     
     <br> Do you want to play a match? Yes: <input type="radio" name="for_match" value="one" checked>
    No: <input type="radio" name="for_match" value="two">
@@ -27,7 +27,7 @@
     <label> <input type="checkbox" name="experience" value="Intermediate"> Intermediate </label>
     <label> <input type="checkbox" name="experience" value="Advanced"> Advanced </label> 
     
-    <br> Password: <input type="password" name="Player Password" value="">
+    <br> Password: <input type="password" name="Player_Password" value="">
     
     
     <br> <input type="submit" value="Submit!">
