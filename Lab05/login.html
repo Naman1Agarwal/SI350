@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Login for Tennis Event</title>
+  <meta name="description" content="Login for ongoing tennis events">
+  <meta name="author" content="Naman Agarwal">
+
+     <style type="text/css">
+      form {
+        max-width:600px;
+        margin: auto;
+        padding: 2rem;
+        border: 1px solid #e6e6e6;
+        border-radius:8px;
+        background: #f9f9f9;
+        font-size: 1.1rem;
+      }
+      label {
+        display: block;
+        margin-bottom: .1rem;
+        font-weight: 500;
+      }
+      input[type="text"]
+      input[type="email"]
+      input[type="password"]{
+        width:100%;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+  </style>
+
+
+</head>
+
+<body>
+
+  <h1> <center> Weclome to the Login Page</center> </h1>
+  
+  <form method="post" action="./login.php">
+    
+    <label for="username"> Your email serves as your username..</label>
+    Username: <input type="email" id="username" name="Player_Email" required>    
+    <br> Password: <input type="password" name="Player_Password" value="" required>
+
+    <br>
+    
+    <br> <input type="submit" value="Submit!">
+    <br> <input type="reset" value="Clear Data">  
+  </form>
+  <p> <a href="https://midn.cs.usna.edu/~m270036/SI350/Lab05/index.html"> Go back! </a> </p>
+  
+</body>
+</html>
+

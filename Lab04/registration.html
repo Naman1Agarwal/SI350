@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Registration for Tennis Event</title>
+  <meta name="description" content="Register for ongoing tennis events">
+  <meta name="author" content="Naman Agarwal">
+
+     <style type="text/css">
+      form {
+        max-width:600px;
+        margin: auto;
+        padding: 2rem;
+        border: 1px solid #e6e6e6;
+        border-radius:8px;
+        background: #f9f9f9;
+        font-size: 1.1rem;
+      }
+      label {
+        display: block;
+        margin-bottom: .1rem;
+        font-weight: 500;
+      }
+      input[type="text"]
+      input[type="email"]
+      input[type="password"]{
+        width:100%;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+  </style>
+
+
+</head>
+
+<body>
+
+  <h1> <center> Play with me or someone else! </center> </h1>
+  
+  <form method="post" action="./submit.php">
+    
+    <br> Name: <input type="text" name="Player_Name" size="25" maxlength="15" placeholder="name">
+    <br> Email: <input type="email" name="Player_Email" required>
+    <br> Who do you want to play with? <input type="text" name="Opponent" size="25" maxlength="15" placeholder="default is me">
+    
+    <br> Do you want to play a match? Yes: <input type="radio" name="for_match" value="one" checked>
+   No: <input type="radio" name="for_match" value="two">
+   
+   <br> Experience Level:     
+    <label> <input type="checkbox" name="experience" value="Beginner"> Beginner </label>
+    <label> <input type="checkbox" name="experience" value="Intermediate"> Intermediate </label>
+    <label> <input type="checkbox" name="experience" value="Advanced"> Advanced </label> 
+    
+    <br> Password: <input type="password" name="Player_Password" value="">
+    
+    
+    <br> <input type="submit" value="Submit!">
+    <br> <input type="reset" value="Clear Data">  
+  </form>
+  <p> <a href="https://midn.cs.usna.edu/~m270036/SI350/Lab04/index.html"> Go back! </a> </p>
+  
+</body>
+</html>
+

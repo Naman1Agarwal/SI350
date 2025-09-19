@@ -1,0 +1,3 @@
+name	player_email	player_match	player_opponent	experience	password
+tim	tim@gmail.com	one	asdf	Beginner	asdf123G	
+bob	bob@gmail.copm	one	asdf	Beginner	dl98J	
