@@ -16,7 +16,7 @@ function check_username_password($username, $password, $filename){
       $temp_username = $players_array[1];
       $temp_password = $players_array[5];
       
-      if ($temp_username == $username && $temp_password == $password){
+      if ($temp_username === $username && $temp_password === $password){
         $found = True;
       }
     }
@@ -32,9 +32,11 @@ if (check_username_password($player_email, $player_password, $filename) == True)
 
   $_SESSION['username'] = $player_email;
   header("Location: requestReport.php");
+  exit;
 }
 else{
-  header("Location: login.php");
+  header("Location: login.html?error-1");
+  exit;
 }
 
 ?>

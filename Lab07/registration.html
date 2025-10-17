@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Registration for Tennis Event</title>
+  <meta name="description" content="Register for ongoing tennis events">
+  <meta name="author" content="Naman Agarwal">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="bg-light border-bottom py-2">
+    <ul class="nav container gap-2">
+      <li class="nav-item flex-fill"> 
+        <a class="btn btn-primary w-100 fs-5" href="index.html">Home</a>
+      </li>
+      <li class="nav-item flex-fill"> 
+        <a class="btn btn-primary w-100 fs-5" href="schedule.html">Schedule</a>
+      </li>
+      <li class="nav-item flex-fill">
+         <a class="btn btn-primary w-100 fs-5" href="registration.html">Registration</a>
+        </li>
+      <li class="nav-item flex-fill"> 
+        <a class="btn btn-primary w-100 fs-5" href="login.html">Login</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <h1> <center> Play with me or someone else! </center> </h1>
+  
+  <form class="mx-auto -4 border rounded shadow-sm" method="post" action="./submit.php">
+    
+    <div class="mb-3">
+      <label for="Player_Name" class="form-label"> Name </label>
+      <input class="form-control" type="text" name="Player_Name" size="25" maxlength="15" placeholder="name">
+    </div>
+
+    <div class="mb-3">
+      <label for="Player_Email" class="form-label"> Email </label>
+      <input class="form-control" type="email" name="Player_Email" required>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="Opponent" class="form-label"> Who do you want to play with? </label>
+      <input class="form-control" type="text" name="Opponent" size="25" maxlength="15" placeholder="default is me">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label"> Do you want to play a match? </label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="for_match" value="one" id="matchy" checked>
+        <label class="form-check-label", for="matchy">Yes</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="for_match" value="two" id="matchn" checked>
+        <label class="form-check-label", for="matchn">No</label>
+      </div>
+    </div>
+
+   <div class="mb-3">
+      <label class="form-label d-block"> Experience Level </label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="experience" value="Beginner" id="beg">
+        <label class="form-check-label" for="beg"> Beginner </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="experience" value="Intermediate" id="mid">
+        <label class="form-check-label" for="mid"> Intermediate </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="experience" value="Advanced" id="adv">
+        <label class="form-check-label" for="adv"> Advanced </label>
+      </div>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="Player_Password" class="form-label"> Password </label>
+      <input class="form-control" type="password" name="Player_Password" value="">
+    </div>
+    
+    <div class="d-flex gap-2"> 
+      <input type="submit" class="btn btn-primary" value="Submit!">
+      <input type="reset" class="btn btn-outline-secondary" value="Clear Data">
+    </div> 
+
+
+  </form>
+  <p> <a href="https://midn.cs.usna.edu/~m270036/SI350/Lab07/index.html"> Go back! </a> </p>
+
+</body>
+</html>
+

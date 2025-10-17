@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> Registration for Tennis Event</title>
+  <meta name="description" content="Register for ongoing tennis events">
+  <meta name="author" content="Naman Agarwal">
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="site-nav">
+    <ul class="site-nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+  
+  <h1> <center> Play with me or someone else! </center> </h1>
+  
+  <form method="post" action="./submit.php">
+    
+    <br> Name: <input type="text" name="Player_Name" size="25" maxlength="15" placeholder="name">
+    <br> Email: <input type="email" name="Player_Email" required>
+    <br> Who do you want to play with? <input type="text" name="Opponent" size="25" maxlength="15" placeholder="default is me">
+    
+    <br> Do you want to play a match? Yes: <input type="radio" name="for_match" value="one" checked>
+   No: <input type="radio" name="for_match" value="two">
+   
+   <br> Experience Level:     
+    <label> <input type="checkbox" name="experience" value="Beginner"> Beginner </label>
+    <label> <input type="checkbox" name="experience" value="Intermediate"> Intermediate </label>
+    <label> <input type="checkbox" name="experience" value="Advanced"> Advanced </label> 
+    
+    <br> Password: <input type="password" name="Player_Password" value="">
+    
+    
+    <br> <input type="submit" value="Submit!">
+    <br> <input type="reset" value="Clear Data">  
+  </form>
+  <p> <a href="https://midn.cs.usna.edu/~m270036/SI350/Lab06/index.html"> Go back! </a> </p>
+
+</body>
+</html>
+

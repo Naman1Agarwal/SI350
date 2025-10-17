@@ -1,11 +1,6 @@
 Name: Naman Agarwal
-Length: 1.5 hours
+Length: 4 hours
 Suggestions: None
 Comments: None
-Documentation: 
-
-Part 1:
- - requieres username
- - 
-
-AI citations: I used google search to see how to do the regex.
+Documentation: I finished part 0, 1, 2.
+AI citations: I used google ai mode to search up stuff about php header/sessions.
